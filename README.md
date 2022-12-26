@@ -7,7 +7,7 @@ A Go SDK for connecting to and interacting with relational databases, such as My
 
 - Docker Desktop
 
-`Installation`
+### Installation
 
 To install the dependencies for this project, run the following command:
 
