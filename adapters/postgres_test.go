@@ -43,7 +43,7 @@ func TestConnectPostgresError(t *testing.T) {
 }
 
 func TestNewPostgresAdapter(t *testing.T) {
-	db, err := ConnectMySQL(config)
+	db, err := ConnectPostgres(configPost)
 
 	if err != nil {
 		// handle the error
