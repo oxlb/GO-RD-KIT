@@ -41,4 +41,28 @@ func main() {
 		fmt.Println("No rows found")
 	}
 
+	posgresConfig, err := adapters.LoadPostgresConfigFromEnv(nil)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	// Connect to Postgres database
+	postgresDB, err := adapters.ConnectPostgres(posgresConfig)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	var todosPostgres []models.Todos
+	postgresDB.Find(&todosPostgres)
+
+	for _, todo := range todosPostgres {
+		fmt.Printf("ID: %d, Title: %s, Description: %s, Completed: %t\n", todo.ID, todo.Title, todo.Description, todo.Completed)
+	}
+
+	if len(todosPostgres) == 0 {
+		fmt.Println("No rows found")
+	}
+
 }
