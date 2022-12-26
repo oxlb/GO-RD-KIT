@@ -69,7 +69,7 @@ func TestNewPostgresAdapter(t *testing.T) {
 
 func TestLoadPostgresConfigFromEnv(t *testing.T) {
 	// Test case where an environment variable is not set
-	os.Unsetenv("DB_MYSQL_USERNAME")
+	os.Unsetenv("DB_POSTGRES_USERNAME")
 	_, err := LoadPostgresConfigFromEnv(nil)
 	if err == nil {
 		t.Errorf("Expected error, got nil")
