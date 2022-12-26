@@ -36,7 +36,7 @@ This will run the go fmt command to format the code according to the Go code for
 
 Make sure `Docker Desktop` is running
 
-run following command
+Use following command
 
 `docker-compose up`
 
