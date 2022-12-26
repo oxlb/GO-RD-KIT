@@ -7,16 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Start LocalStack
-        uses: localstack/actions/localstack@v1
+      - name: Start MySQL
+        uses: docker://docker:19.03.13
         with:
-          services: mysql
-      - name: Set Environment Variables
+          args: up -d mysql
+      - name: Wait for MySQL to be ready
         run: |
-          echo "::set-env name=DB_MYSQL_USERNAME::root"
-          echo "::set-env name=DB_MYSQL_PASSWORD::root"
-          echo "::set-env name=DB_MYSQL_PORT::3306"
-          echo "::set-env name=DB_MYSQL_HOST::localhost"
-          echo "::set-env name=DB_MYSQL_DATABASE::todo"
+          while ! mysqladmin ping -h"$MYSQL_HOST" --silent; do
+            sleep 1
+          done
       - name: Run Tests
-        run: make test
+        run: go test
