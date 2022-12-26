@@ -3,9 +3,12 @@ A Go SDK for connecting to and interacting with relational databases, such as My
 
 ## Prerequisites
 
-Go
-MySQL or Postgres (optional, if you want to connect to a specific database)
-Installation
+- Go
+
+- Docker Desktop
+
+`Installation`
+
 To install the dependencies for this project, run the following command:
 
 
