@@ -11,6 +11,17 @@ services:
     ports:
         - "${DB_MYSQL_PORT}:3306"
 
+  postgres:
+    image: postgres
+    environment:
+        - POSTGRES_USER=${DB_POSTGRES_USERNAME}
+        - POSTGRES_PASSWORD=${DB_POSTGRES_PASSWORD}
+        - POSTGRES_DB=${DB_POSTGRES_DATABASE}
+    ports:
+        - "${DB_POSTGRES_PORT}:5432"
+    volumes: 
+        - ./init-p/01.sql:/docker-entrypoint-initdb.d/01.sql
+
   adminer:
       image: adminer
       depends_on:
