@@ -13,7 +13,7 @@ To install the dependencies for this project, run the following command:
 
 This will initialize the Go module and install the required dependencies, including gorm and godotenv.
 
-##Running Tests
+## Running Tests
 
 To run the tests for this project, use the following command:
 
