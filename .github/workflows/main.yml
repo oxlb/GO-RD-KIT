@@ -17,3 +17,7 @@ jobs:
         run: make setup 
       - name: Run tests
         run: make test
+      - name: Shut down the stack
+        run: docker-compose down
+
+
