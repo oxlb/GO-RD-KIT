@@ -31,3 +31,17 @@ To format the code in this project, use the following command:
 `make format`
 
 This will run the go fmt command to format the code according to the Go code formatting standards.
+
+## Example Usage
+
+Make sure `Docker Desktop` is running
+
+run following command
+
+`docker-compose up`
+
+To run the example code, use the following command:
+
+`go run main.go`
+
+This will connect to the MySQL database using the configuration in the .env file, retrieve all rows from the todos table, and print the data to the console.
