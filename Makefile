@@ -4,6 +4,7 @@ setup:
 	go mod init github.com/oxlb/GO-RD-KIT
 	go get github.com/jinzhu/gorm
 	go get github.com/jinzhu/gorm/dialects/mysql
+	go get github.com/jinzhu/gorm/dialects/postgres
 	go get github.com/joho/godotenv
 
 .PHONY: test
