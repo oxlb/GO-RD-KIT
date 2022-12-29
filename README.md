@@ -1,5 +1,8 @@
 [![Test](https://github.com/oxlb/GO-RD-KIT/actions/workflows/main.yml/badge.svg)](https://github.com/oxlb/GO-RD-KIT/actions/workflows/main.yml)
 
+![Image Alt Text](https://raw.githubusercontent.com/oxlb/GO-RD-KIT/main/Go-Repo-Go-RD-KIT.png)
+
+
 # GO-RD-KIT
 A Go SDK for connecting to and interacting with relational databases, such as MySQL and Postgres.
 
