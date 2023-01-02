@@ -1,6 +1,6 @@
 [![Test](https://github.com/oxlb/GO-RD-KIT/actions/workflows/main.yml/badge.svg)](https://github.com/oxlb/GO-RD-KIT/actions/workflows/main.yml)
 
-![Image Alt Text](https://raw.githubusercontent.com/oxlb/GO-RD-KIT/main/Go-Repo-Go-RD-KIT.png)
+![Image Alt Text](https://raw.githubusercontent.com/oxlb/GO-RD-KIT/main/Go-Repo-Go-RD-KIT%20(1).png)
 
 
 # GO-RD-KIT
